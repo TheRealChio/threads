@@ -29,7 +29,6 @@ function PostThread({ userId }: Props) {
   const pathname = usePathname();
 
   const { organization } = useOrganization();
-  console.log(organization);
 
   const form = useForm<z.infer<typeof ThreadValidation>>({
     resolver: zodResolver(ThreadValidation),
